@@ -1,18 +1,40 @@
+from sorts_base import Sorts
+import sys
+
 class Main:
     def __init__(self):
         print('Start Operations')
+        sortslib = Sorts()
         self.dict_func = {}
-        self.methods = []
+        self.Sorts_method_list = [method for method in dir(Sorts) if method.startswith('__') is False]
+
+        try:
+            sortslib
+        except:
+            print('An error occurred while trying to load the sorts from ../sorts_base.py.')
+            print('Check it out in your folder.')
+            sys.exit(1)
         self.operations()
 
     def operations(self):
         oper = input("$ ")
         if oper == 'help':
-            print('no help :) (yet)')
+            print('Available commands at this step: ')
+            print('...')
+            print('Or push something another for turn back.')
             self.operations()
         if oper == 'sorts':
-            print('')
-        if oper not in ['help', 'sorts']:
+            print('Available commands at this step: ')
+            print('sorts list/ .. or push something another for turn back.')
+            oper = input('$ ')
+            if oper == 'sorts list':
+                print('There are: ', self.Sorts_method_list)
+                print('If you want to use any sorting - select it from the list.')
+                self.operations()
+            else:
+                print('Turning back...')
+                self.operations()
+        if oper not in self.Sorts_method_list:
             print('Oops... Try another command!')
             self.operations()
 
@@ -24,58 +46,7 @@ class Main:
 
 
 
-
-
-
-
-def quick_sort(data):
-    if len(data) <= 1:
-        return data
-    border = data[0]
-    left = list(filter(lambda x: x < border, data))
-    center = [x for x in data if x == border]
-    right = list(filter(lambda x: x > border, data))
-    return quick_sort(left) + center + quick_sort(right)
-
-#to do
-def quicksort_help(data):
-    if len(data) <= 1:
-        return data
-    border = data[0]
-    left = list(filter(lambda x: x < border, data))
-    center = [x for x in data if x == border]
-    right = list(filter(lambda x: x > border, data))
-    return quick_sort(left) + center + quick_sort(right)
-
 # ----------------------------------------------------------
 
-def insertion(data):
-    for i in range(len(data)):
-        j = i - 1
-        key = data[i]
-        while data[j] > key and j >= 0:
-            data[j+1] = data[j]
-            j -= 1
-        data[j+1] = key
-    return data
-
-def insertion_help(data):
-    step = 1
-    for i in range(len(data)):
-        j = i - 1
-        key = data[i]
-        while data[j] > key and j >= 0:
-            data[j+1] = data[j]
-            j -= 1
-        data[j+1] = key
-        if j != -1 and j != 0:
-            print('Step:', step, ':', data)
-            step += 1
-    return data
-
-# ----------------------------------------------------------
-
-
-print('QuickSort: ', quicksort_help([1, 4, 6, 4, 2, 8, 5, 0, 1, 10, 142, 5]))
-print('InsertionSort:', insertion_help([1, 4, 6, 4, 2, 8, 5]))
-Main()
+if __name__ == '__main__':
+    Main()
