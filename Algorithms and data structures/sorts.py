@@ -1,3 +1,29 @@
+class Main:
+    def __init__(self):
+        print('Start Operations')
+        self.dict_func = {}
+        self.methods = []
+        self.operations()
+
+    def operations(self):
+        oper = input("$ ")
+        if oper == 'help':
+            print('no help :) (yet)')
+        if oper == 'sorts':
+            print('')
+
+    def t_clear(self):
+        print(' ')
+        print('----------------------------------------')
+        print(' ')
+        return
+
+
+
+
+
+
+
 def quick_sort(data):
     if len(data) <= 1:
         return data
@@ -48,3 +74,4 @@ def insertion_help(data):
 
 print('QuickSort: ', quicksort_help([1, 4, 6, 4, 2, 8, 5, 0, 1, 10, 142, 5]))
 print('InsertionSort:', insertion_help([1, 4, 6, 4, 2, 8, 5]))
+Main()
