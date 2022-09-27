@@ -5,6 +5,7 @@ class Sorts:
 
     def feedback(self):
         print('Sorts list loaded')
+        return
 
     def quicksort(self, data):
         if len(data) <= 1:
@@ -16,14 +17,14 @@ class Sorts:
         return self.quick_sort(left) + center + self.quick_sort(right)
 
     # to do
-    def quicksort_help(self, data):
+    def quicksort_by_step(self, data):
         if len(data) <= 1:
             return data
         border = data[0]
         left = list(filter(lambda x: x < border, data))
         center = [x for x in data if x == border]
         right = list(filter(lambda x: x > border, data))
-        return self.quicksort(left) + center + self.quicksort(right)
+        return self.quicksort_by_step(left) + center + self.quicksort_by_step(right)
 
     # ----------------------------------------------------------
 
@@ -35,9 +36,10 @@ class Sorts:
                 data[j + 1] = data[j]
                 j -= 1
             data[j + 1] = key
-        return data
+        print(data)
+        return
 
-    def insertion_help(self, data):
+    def insertion_by_step(self, data):
         step = 1
         for i in range(len(data)):
             j = i - 1
