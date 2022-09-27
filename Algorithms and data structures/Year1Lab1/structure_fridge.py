@@ -4,6 +4,7 @@ class Fridge:
                         'gummy_bears': 1000}
         # self.part_of_day = self.get_day_time()
         print('Fridge started')
+        print('Use: take/put/check')
         self.operations()
 
     def operations(self):
