@@ -9,8 +9,12 @@ class Main:
         oper = input("$ ")
         if oper == 'help':
             print('no help :) (yet)')
+            self.operations()
         if oper == 'sorts':
             print('')
+        if oper not in ['help', 'sorts']:
+            print('Oops... Try another command!')
+            self.operations()
 
     def t_clear(self):
         print(' ')
