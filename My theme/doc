@@ -1,0 +1,4 @@
+# exit codes:
+0 - system exit, unexpectedly and completely incomprehensible.
+1 - exit from func Main.exit(code)
+

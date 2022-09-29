@@ -18,12 +18,16 @@ class Main:
         self.operations()
 
     def operations(self):
+        self.t_clear()
+        print('Waiting for your command:')
         oper = input("$ ")
         if oper == 'help':
             print('Available commands at this step: ')
             print('I don"t want to write documentation, I"m a lazy ass.')
             print('Or push something another for turn back.')
             self.operations()
+        if oper =='exit':
+            self.exit(1)
         if oper == 'sorts':
             print('Available commands at this step: ')
             print('sorts list/ .. or push something another for turn back.')
@@ -35,9 +39,8 @@ class Main:
                     print('Your massive saved')
                 print('There are: ', self.Sorts_method_list)
                 print('If you want to use any sorting - select it from the list.')
-                self.t_clear()
                 input_sort2 = input('$ ')
-                if input_sort == 'insertion':
+                if input_sort2 == 'insertion':
                     print(self.sortslib.insertion(self.test_massive))
                     self.operations()
                 else:
@@ -58,9 +61,17 @@ class Main:
         print(' ')
         return
 
+    def exit(self, code):
+        print('Emergency stop | Code: ', code)
+        print('Session closed.')
+        self.t_clear()
+        sys.exit(code)
 
 
 # ----------------------------------------------------------
 
 if __name__ == '__main__':
-    Main()
+    try:
+        Main()
+    except:
+        print('Something totally unexpected.')
