@@ -39,8 +39,6 @@ class Main:
                 input_sort2 = input('$ ')
                 if input_sort == 'insertion':
                     print(self.sortslib.insertion(self.test_massive))
-
-
                     self.operations()
                 else:
                     print('Turning back...')
