@@ -23,14 +23,14 @@ class Example(QWidget):
         self.setGeometry(300, 300, self.w, self.h)
         self.setWindowTitle('Слыш хуило')
 
-        pybutton = QPushButton('Я гей', self)
+        pybutton = QPushButton("Таня лошара", self)
         pybutton.clicked.connect(self.clickMethod)
         pybutton.resize(100, 32)
         pybutton.move(100, 100)
 
         self.btn = Button(self)
         self.btn.setMouseTracking(True);
-        self.btn.setText("Я натурал")
+        self.btn.setText("Таня топ <3")
         self.btn.resize(*self.btn_size)
         self.btn.move(*self.coords)
         self.btn.mouseMoved.connect(self.moveButton)
