@@ -3,7 +3,7 @@ import sys
 
 class Main:
     def __init__(self):
-        print('Start Operations')
+        print('Start Operations.')
         self.sortslib = Sorts()
         self.dict_func = {}
         self.Sorts_method_list = [method for method in dir(Sorts) if method.startswith('__') is False]
