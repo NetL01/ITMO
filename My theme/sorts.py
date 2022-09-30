@@ -75,3 +75,4 @@ if __name__ == '__main__':
         Main()
     except:
         print('Something totally unexpected.')
+        sys.exit(404)
