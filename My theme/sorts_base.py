@@ -1,3 +1,7 @@
+import time
+
+
+
 class Sorts:
     def __init__(self):
         self.feedback()
@@ -29,6 +33,8 @@ class Sorts:
     # ----------------------------------------------------------
 
     def insertion(self, data):
+        start_time = time.time()
+        print(start_time)
         for i in range(len(data)):
             j = i - 1
             key = data[i]
@@ -37,7 +43,11 @@ class Sorts:
                 j -= 1
             data[j + 1] = key
         print(data)
+        a = time.time()
+        print(a)
+        print("--- %s seconds ---" % (time.time() - start_time))
         return
+
 
     def insertion_by_step(self, data):
         step = 1
