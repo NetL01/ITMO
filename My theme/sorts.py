@@ -1,5 +1,6 @@
 from sorts_base import Sorts
 import sys
+import random
 
 class Main:
     def __init__(self):
@@ -7,12 +8,12 @@ class Main:
         self.sortslib = Sorts()
         self.dict_func = {}
         self.Sorts_method_list = [method for method in dir(Sorts) if method.startswith('__') is False]
-        self.test_massive = []
+        self.test_massive = [randint(-10, 10) for i in range(20)]
 
         try:
             self.sortslib
         except:
-            print('An error occurred while trying to load the sorts from ../sorts_base.py.')
+            print('An error occurred while trying to load the sorts from .../sorts_base.py.')
             print('Check it out in your folder.')
             sys.exit(1)
         self.operations()
@@ -49,6 +50,7 @@ class Main:
 
                 self.operations()
             else:
+                print('Command not find.')
                 print('Turning back...')
                 self.operations()
         if oper not in self.Sorts_method_list:
