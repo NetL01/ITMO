@@ -1,6 +1,6 @@
 from sorts_base import Sorts
 import sys
-import random
+from random import randint
 
 class Main:
     def __init__(self):
@@ -8,7 +8,7 @@ class Main:
         self.sortslib = Sorts()
         self.dict_func = {}
         self.Sorts_method_list = [method for method in dir(Sorts) if method.startswith('__') is False]
-        self.test_massive = [randint(-10, 10) for i in range(20)]
+        self.test_massive = [randint(0, 1000000) for i in range(randint(100, 10000))]
 
         try:
             self.sortslib
@@ -37,7 +37,7 @@ class Main:
                 flag_to_change_test_massive = input('A u want to change test massive? Y/n:')
                 if flag_to_change_test_massive in ['Y', 'y']:
                     self.test_massive = list(map(int, input('Enter your test massive: ').split()))
-                    print('Your massive saved')
+                    print('Your massive saved.')
                 print('There are: ', self.Sorts_method_list)
                 print('If you want to use any sorting - select it from the list.')
                 input_sort2 = input('$ ')
