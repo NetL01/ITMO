@@ -50,7 +50,7 @@ class Main:
 
                 self.operations()
             else:
-                print('Command not find.')
+                print('Command not find...')
                 print('Turning back...')
                 self.operations()
         if oper not in self.Sorts_method_list:
