@@ -1,0 +1,3 @@
+C:/Users/razuv/CLionProjects/ITMO/cmake-build-debug/CMakeFiles/ITMO.dir
+C:/Users/razuv/CLionProjects/ITMO/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/razuv/CLionProjects/ITMO/cmake-build-debug/CMakeFiles/rebuild_cache.dir

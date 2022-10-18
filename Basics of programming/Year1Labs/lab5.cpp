@@ -2,8 +2,8 @@
 
 int main()
 {
-    int a[10] = {1, 2, 3, 4, 5, 6, 7, 8};
-    for (int i; i = sizeof (a) + 1; i++) {
+    int a[10] = {10, 20, 30, 40, 50, 60, 70};
+    for (int i = 0; sizeof (a) + 1; i++) {
         printf("%d", i);
     }
     return 0;
