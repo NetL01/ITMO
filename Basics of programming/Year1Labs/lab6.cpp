@@ -13,7 +13,6 @@ int main() {
     printf("\n");
     char * arr;
     arr = (char*)malloc (4 * sizeof (char));
-    char s;
     for (char *s = arr; s < (arr + 4); s++) {
         scanf("%s", (s));
     }
