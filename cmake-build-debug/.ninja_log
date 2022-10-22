@@ -1,11 +1,11 @@
 # ninja log v5
+5	137	6866642726438716	CMakeFiles/ITMO.dir/Basics_of_programming/Year1Labs/lab1.cpp.obj	3c3d96acb547a84c
 8	245	6878781686988227	CMakeFiles/ITMO.dir/Basics_of_programming/Year1Labs/lab6.cpp.obj	fd892e9021fc30a6
 1	459	6878777647455868	CMakeFiles/ITMO.dir/Basics_of_programming/Year1Labs/lab5.cpp.obj	c7c9c802f0520f07
-5	137	6866642726438716	CMakeFiles/ITMO.dir/Basics_of_programming/Year1Labs/lab1.cpp.obj	3c3d96acb547a84c
 4	102	6866673107218321	CMakeFiles/ITMO.dir/Basics_of_programming/Year1Labs/lab3.cpp.obj	fe2c837475b2cf60
 1	259	6866642727675625	CMakeFiles/ITMO.dir/Basics_of_programming/Year1Labs/lab2.cpp.obj	bbe05ccfb280aafd
 3	50	6866644290631740	CMakeFiles/ITMO.dir/Test_polighon/fizzbuzz.cpp.obj	318226c0f09b5f92
-3	455	6879029798621840	build.ninja	338afddbfc405f65
+2	338	6881343034573635	build.ninja	338afddbfc405f65
 2	101	6866675819080311	CMakeFiles/ITMO.dir/Basics_of_programming/Year1Labs/lab4.cpp.obj	b59cfbea48efd612
-246	527	6878781689720921	ITMO.exe	8bc7f94a02d68bc3
-8	1316	6878343039238602	CMakeFiles/ITMO.dir/C++_learning/study/new.cpp.obj	8309751f6dd2af5
+340	433	6879130965178241	ITMO.exe	76cc5a8eee6750fd
+3	340	6879130964270311	CMakeFiles/ITMO.dir/C++_learning/study/new.cpp.obj	8309751f6dd2af5

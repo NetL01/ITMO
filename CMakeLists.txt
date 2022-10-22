@@ -4,6 +4,6 @@ project(ITMO)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(ITMO
-        "Basics of programming/Year1Labs/lab6.cpp"
+        "C++ learning/study/stek.cpp"
 
         )
