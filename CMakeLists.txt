@@ -4,6 +4,6 @@ project(ITMO)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(ITMO
-        "C++ learning/study/stek.cpp"
+        "Algorithms and data structures/Year1Lab3/matrix_sort(not_it_lab).cpp"
 
         )
