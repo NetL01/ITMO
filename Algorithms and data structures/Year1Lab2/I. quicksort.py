@@ -19,3 +19,13 @@ def quick_sort(s):
     center = [i for i in s if i == elem]
     right = list(filter(lambda x: x > elem, s))
     return quick_sort(left) + center + quick_sort(right)
+
+
+
+
+
+
+
+def qsort(L):
+    if L: return list(map(int, qsort(filter(lambda x: x < L[0], L[1:])) + L[0:1] + qsort(filter(lambda x: x >= L[0], L[1:]))))
+    return []

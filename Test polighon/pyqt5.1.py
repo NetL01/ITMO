@@ -21,16 +21,16 @@ class Example(QWidget):
         self.w = 500
         self.h = 400
         self.setGeometry(300, 300, self.w, self.h)
-        self.setWindowTitle('Куда поедешь?')
+        self.setWindowTitle('Кто семен по жизни епта?')
 
-        pybutton = QPushButton("Московские ворота", self)
+        pybutton = QPushButton("Жигало беконайзер", self)
         pybutton.clicked.connect(self.clickMethod)
         pybutton.resize(100, 32)
         pybutton.move(100, 100)
 
         self.btn = Button(self)
         self.btn.setMouseTracking(True);
-        self.btn.setText("На пары")
+        self.btn.setText("Нормальный пацан")
         self.btn.resize(*self.btn_size)
         self.btn.move(*self.coords)
         self.btn.mouseMoved.connect(self.moveButton)
