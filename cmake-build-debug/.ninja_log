@@ -1,18 +1,20 @@
 # ninja log v5
+5	137	6866642726438716	CMakeFiles/ITMO.dir/Basics_of_programming/Year1Labs/lab1.cpp.obj	3c3d96acb547a84c
 8	245	6878781686988227	CMakeFiles/ITMO.dir/Basics_of_programming/Year1Labs/lab6.cpp.obj	fd892e9021fc30a6
 1	459	6878777647455868	CMakeFiles/ITMO.dir/Basics_of_programming/Year1Labs/lab5.cpp.obj	c7c9c802f0520f07
-5	137	6866642726438716	CMakeFiles/ITMO.dir/Basics_of_programming/Year1Labs/lab1.cpp.obj	3c3d96acb547a84c
 4	102	6866673107218321	CMakeFiles/ITMO.dir/Basics_of_programming/Year1Labs/lab3.cpp.obj	fe2c837475b2cf60
 1	259	6866642727675625	CMakeFiles/ITMO.dir/Basics_of_programming/Year1Labs/lab2.cpp.obj	bbe05ccfb280aafd
 3	50	6866644290631740	CMakeFiles/ITMO.dir/Test_polighon/fizzbuzz.cpp.obj	318226c0f09b5f92
-1	201	6888271802701558	build.ninja	338afddbfc405f65
+15	426	6892950483167054	build.ninja	338afddbfc405f65
 2	101	6866675819080311	CMakeFiles/ITMO.dir/Basics_of_programming/Year1Labs/lab4.cpp.obj	b59cfbea48efd612
-298	382	6887802516851916	ITMO.exe	da6bb88a0c744bba
+734	880	6891130712480991	ITMO.exe	53f1086a0f30f504
 3	340	6879130964270311	CMakeFiles/ITMO.dir/C++_learning/study/new.cpp.obj	8309751f6dd2af5
 4	399	6881656713355150	CMakeFiles/ITMO.dir/C++_learning/study/stack.cpp.obj	e6004fa6217a1bec
 7	905	6882376103938290	CMakeFiles/ITMO.dir/Algorithms_and_data_structures/Year1Lab3/binary_find.cpp.obj	423b05797fc1ea19
 3	408	6882388385348797	CMakeFiles/ITMO.dir/Algorithms_and_data_structures/Year1Lab3/mak_stack.cpp.obj	81153ec0e7744daf
 3	334	6882402597683691	CMakeFiles/ITMO.dir/Algorithms_and_data_structures/Year1Lab3/postfix_note.cpp.obj	b3fbf715a3a63b26
 3	364	6883944438959756	CMakeFiles/ITMO.dir/Algorithms_and_data_structures/Year1Lab3/correct_bracket_sequence.cpp.obj	bf2e7dcf1808ae9a
-0	577	6886642988273359	CMakeFiles/ITMO.dir/Algorithms_and_data_structures/Year1Lab3/girlanda.cpp.obj	d51ebc0ea7b06cca
+5	733	6891130711064780	CMakeFiles/ITMO.dir/Algorithms_and_data_structures/Year1Lab3/girlanda.cpp.obj	d51ebc0ea7b06cca
 4	298	6887802516039792	CMakeFiles/ITMO.dir/Algorithms_and_data_structures/Year1Lab3/matrix_sort(not_it_lab).cpp.obj	38bbbad74844671c
+10	1756	6890259139262241	CMakeFiles/ITMO.dir/Algorithms_and_data_structures/Year1Lab3/anagrams.cpp.obj	1e645e4c07648e76
+8	866	6890331976040823	CMakeFiles/ITMO.dir/Basics_of_programming/Year1Labs/lab7.cpp.obj	fe99fd28fa7a2dc9

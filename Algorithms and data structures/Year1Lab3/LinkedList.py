@@ -3,6 +3,7 @@ class Box:
     self.cat = cat
     self.nextbox = None
 
+
 class LinkedList:
     def __init__(self):
         self.head = None
