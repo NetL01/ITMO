@@ -14,7 +14,7 @@ class Sorts:
     def quicksort(self, data):
         start_time = time.time()
         self.quicksort_do(data)
-        print("--- %s seconds ---" % (time.time() - start_time))
+        return "--- %s seconds ---" % (time.time() - start_time)
 
     def quicksort_do(self, data):
         if len(data) <= 1:
@@ -32,7 +32,7 @@ class Sorts:
     def insertion(self, data):
         start_time = time.time()
         self.insertion_do(data)
-        print("--- %s seconds ---" % (time.time() - start_time))
+        return "--- %s seconds ---" % (time.time() - start_time)
 
     def insertion_do(self, data):
         for i in range(len(data)):

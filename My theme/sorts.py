@@ -7,11 +7,12 @@ from tqdm import tqdm
 
 class Main:
     def __init__(self):
+        self.test_massive = [randint(1, 1000) for i in range(randint(1111, 9999))]
         self.sortslib = None
         self.Sorts_method_list = None
         print('Start Environment')
         self.dict_func = {}
-        self.test_massive = [randint(0, 1000000) for i in range(randint(100, 10000))]
+
 
         # trying to connect with included libraries
         self.connect()
@@ -33,59 +34,83 @@ class Main:
         self.operations()
 
     def operations(self):
-        self.t_clear()
-        print('Waiting for your command (sorts):')
-        oper = input("$ ")
-        if oper == 'help':
-            print('Available commands at this step: ')
-            print('I don"t want to write documentation, I"m a lazy ass.')
-            print('Or push something another for turn back.')
-            self.operations()
-        if oper == 'exit':
-            self.exit(1)
-        if oper == 'sorts':
-            print('Available commands at this step: ')
-            print('<sorts list>/<sorts stress test> .. or push something another for turn back.')
-            input_sort = input('$ ')
-
-
-            if input_sort == 'sorts list':
-                flag_to_change_test_massive = input('A u want to change test massive? Y/n:')
-                if flag_to_change_test_massive in ['Y', 'y']:
-                    self.test_massive = list(map(int, input('Enter your test massive: ').split()))
-                    print('Your massive saved.')
-                print('There are: ', self.Sorts_method_list)
-                print('If you want to use any sorting - select it from the list.')
-                input_sort2 = input('$ ')
-                if input_sort2 == 'insertion':
-                    print(self.sortslib.insertion(self.test_massive))
-                    self.operations()
-                if input_sort2 == 'quicksort':
-                    print(self.sortslib.quicksort(self.test_massive))
+        try:
+            self.t_clear()
+            print('Waiting for your command <test_massive/sorts/stress_test/help/exit...>:')
+            oper = input("$ ")
+            if oper == 'help':
+                print('Nothing will help you.')
+                self.operations()
+            if oper == 'exit':
+                self.exit(1)
+            if oper == 'sorts':
+                print('Available commands at this step: ')
+                print('<sorts list>/<sorts stress test> .. or push something another for turn back.')
+                self.aftersorts()
+            if oper == 'stress_test':
+                self.stress_test()
+            if oper == 'test_massive':
+                flag_to_change_m = input('Do u want to create your test massive? Y/n: ')
+                if flag_to_change_m == 'Y' or flag_to_change_m == 'y':
+                    self.set_test_massive()
                 else:
-                    print('Turning back...')
-                    self.operations()
-
-            if input_sort == 'sorts stress test':
-                flag_to_change_test_massive = input('A u want to change test massive? Y/n:')
-                if flag_to_change_test_massive in ['Y', 'y']:
-                    self.test_massive = list(map(int, input('Enter your test massive: ').split()))
-                    print('Your massive saved.')
-                print('Quicksort test: ', self.sortslib.quicksort(self.test_massive))
-                print('Insertion test: ', self.sortslib.insertion(self.test_massive))
-                self.operations()
-
-                self.operations()
+                    print('Generated array size:', len(self.test_massive))
+                    time.sleep(1)
             else:
-                print('Command not find...')
-                print('Turning back...')
                 self.operations()
-        if oper not in self.Sorts_method_list:
-            print('Oops... Try another command!')
+        except:
+            print('Some problems <operations stage>')
             self.operations()
+
+
+    def aftersorts(self):
+        # part of sorts
+        try:
+            type_of_sort = input('Enter you selected sort - <insertion/quicksort/...>')
+            if type_of_sort == 'insertion':
+                print(self.sortslib.insertion(self.test_massive))
+                self.operations()
+            if type_of_sort == ' quicksort':
+                print(self.sortslib.quicksort(self.test_massive))
+                self.operations()
+        except:
+            print('Some problems <sort selection stage>')
+            self.operations()
+
+    def stress_test(self):
+        try:
+            print('Forming conditions for passing an array through imported sorts')
+            for i in tqdm(randint(3, 5)):
+                time.sleep(1)
+            print('Quicksort test: ', self.sortslib.quicksort(self.test_massive))
+            time.sleep(0.5)
+            print('Insertion test: ', self.sortslib.insertion(self.test_massive))
+            time.sleep(0.5)
+            print('Stress test completed')
+            self.operations()
+        except:
+            print('Some problems <stress test stage>')
+            self.operations()
+
 
     # ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+    def set_test_massive(self):
+        print('Customizing your input size and type')
+
+        size = input('Enter your desired size: ')
+        range_nums = input('Select the desired range of numbers (with a space)')
+        lowrange, highrange = range_nums.split()
+        self.test_massive = [randint(int(lowrange), int(highrange)) for i in range(int(size))]
+        print('Size:', size, 'Value range: from', lowrange, 'to', highrange)
+        time.sleep(1)
+        print('Combining your massive')
+        time.sleep(1)
+        for i in tqdm(range(len(self.test_massive))):
+            time.sleep(0.0001)
+        print('Combining complete')
+
+        #    print('Error creating')
 
     def t_clear(self):
         print(' ')
