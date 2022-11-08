@@ -7,6 +7,7 @@ struct list {
     list * head;
     list * tail;
 
+
     list() {
         head = tail = nullptr;
         void listAdd(int x){
@@ -20,5 +21,7 @@ struct list {
 };
 
 
-void List
-
+void List() {
+    align = alignof(val);
+    val = nullptr
+}
