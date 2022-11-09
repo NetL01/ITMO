@@ -5,6 +5,7 @@ import time
 from tqdm import tqdm
 
 
+
 class Main:
     def __init__(self):
         self.test_massive = [randint(1, 1000) for i in range(randint(1111, 9999))]
