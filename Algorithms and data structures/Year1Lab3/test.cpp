@@ -2,8 +2,11 @@ struct Node {
     struct Node * next;
 };
 
+int tail;
+tail = nullptr;
+
 void reverse(struct Node **head){
-    struct Node * current, * next, * prev = nullptr;
+    struct Node * current, * temp, * prev = nullptr;
     current = * head;
     while (current) {
         temp = current->next;
