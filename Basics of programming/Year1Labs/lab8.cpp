@@ -1,4 +1,4 @@
-/* 1, 4, 7, 8, 11 */
+/* 1, 4, 7, 8, lab11 */
 
 #include <string.h>
 #include <stdio.h>
@@ -86,10 +86,10 @@ int complex_find() {
 }
 
 int main(){
-    /* concatenate(); */
-    /* comparison(); */
-    /* len(); */
-    /* f_occurrence(); */
+    concatenate();
+    comparison();
+    len();
+    f_occurrence();
     complex_find();
     return 0;
 }

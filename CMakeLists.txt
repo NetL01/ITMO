@@ -4,6 +4,5 @@ project(ITMO)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(ITMO
-        "Algorithms and data structures/Year1Lab5/simple_find_tree.cpp"
-
+        "Basics of programming/Year1Labs/lab12.cpp"
         )
