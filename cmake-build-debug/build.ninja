@@ -49,11 +49,11 @@ cmake_ninja_workdir = C$:/Users/razuv/CLionProjects/ITMO/cmake-build-debug/
 
 build cmake_object_order_depends_target_ITMO: phony || CMakeFiles/ITMO.dir
 
-build CMakeFiles/ITMO.dir/Basics_of_programming/Year1Labs/lab12.cpp.obj: CXX_COMPILER__ITMO_Debug C$:/Users/razuv/CLionProjects/ITMO/Basics$ of$ programming/Year1Labs/lab12.cpp || cmake_object_order_depends_target_ITMO
-  DEP_FILE = CMakeFiles\ITMO.dir\Basics_of_programming\Year1Labs\lab12.cpp.obj.d
+build CMakeFiles/ITMO.dir/Algorithms_and_data_structures/Year1Lab6/1.cpp.obj: CXX_COMPILER__ITMO_Debug C$:/Users/razuv/CLionProjects/ITMO/Algorithms$ and$ data$ structures/Year1Lab6/1.cpp || cmake_object_order_depends_target_ITMO
+  DEP_FILE = CMakeFiles\ITMO.dir\Algorithms_and_data_structures\Year1Lab6\1.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\ITMO.dir
-  OBJECT_FILE_DIR = CMakeFiles\ITMO.dir\Basics_of_programming\Year1Labs
+  OBJECT_FILE_DIR = CMakeFiles\ITMO.dir\Algorithms_and_data_structures\Year1Lab6
 
 
 # =============================================================================
@@ -63,7 +63,7 @@ build CMakeFiles/ITMO.dir/Basics_of_programming/Year1Labs/lab12.cpp.obj: CXX_COM
 #############################################
 # Link the executable ITMO.exe
 
-build ITMO.exe: CXX_EXECUTABLE_LINKER__ITMO_Debug CMakeFiles/ITMO.dir/Basics_of_programming/Year1Labs/lab12.cpp.obj
+build ITMO.exe: CXX_EXECUTABLE_LINKER__ITMO_Debug CMakeFiles/ITMO.dir/Algorithms_and_data_structures/Year1Lab6/1.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\ITMO.dir

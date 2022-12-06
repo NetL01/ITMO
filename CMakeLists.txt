@@ -4,5 +4,5 @@ project(ITMO)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(ITMO
-        "Basics of programming/Year1Labs/lab12.cpp"
+        "Algorithms and data structures/Year1Lab6/1.cpp"
         )
