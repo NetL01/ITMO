@@ -1,64 +1,31 @@
-#include <iostream>
-#include <algorithm>
-#include <cmath>
+#include <fstream>
 #include <vector>
-#include <string>
 
 using namespace std;
 
-
-int x=1;
-struct Node {
-    int key;
-    Node *right;
-    Node *left;
-
-    Node(int key) : key(key), right(nullptr), left(nullptr) {}
-};
-
-struct BinSearchTree {
-    Node *Root;
-
-    BinSearchTree() : Root(nullptr) {};
-
-    void Build(Node *a, int &x)
-    {
-        if (a== nullptr)
-        {
-            return;
-        }
-        Build(a->left,x);
-        a->key=x;
-        x++;
-        Build(a->right,x);
-    }
-
-};
-
-
 int main() {
+    ifstream fin("balance.in");
+    ofstream fout("balance.out");
+
     int n;
-    cin >> n;
-    int l[n+1];
-    int r[n+1];
-    Node *arr[n+1];
-    arr[0]= nullptr;
-    BinSearchTree Tree;
-    for (int i=1;i<=n;i++)
-    {
-        cin >> l[i] >> r[i];
-        arr[i]=new Node(0);
+    fin >> n;
+
+    vector<vector<int>> tree(n, vector<int>(3));
+    int l, r;
+
+    for (int i = 0; i < n; ++i) {
+        fin >> tree[i][0];
+        fin >> tree[i][1];
+        fin >> tree[i][2];
     }
-    for (int i=1;i<=n;i++)
-    {
-        arr[i]->left=arr[l[i]];
-        arr[i]->right=arr[r[i]];
+
+    vector<int> h(n + 1);
+    for (int i = n; i > 0; i--) {
+        l = tree[i - 1][1];
+        r = tree[i - 1][2];
+        h[i] = 1 + max(h[l], h[r]);
     }
-    Tree.Root=arr[1];
-    Tree.Build(Tree.Root,x);
-    for (int i=1;i<=n;i++)
-    {
-        cout << arr[i]->key << " ";
-    }
-    return 0;
+
+    for (int i = 0; i < n; i++)
+        fout << h[tree[i][2]] - h[tree[i][1]] << "\n";
 }
