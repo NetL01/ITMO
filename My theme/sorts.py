@@ -16,9 +16,9 @@ class Main:
 
 
         # trying to connect with included libraries
-        self.connect()
+        self.connect_sorts_base()
 
-    def connect(self):
+    def connect_sorts_base(self):
         try:
             self.sortslib
             self.sortslib = Sorts()
@@ -34,6 +34,21 @@ class Main:
             sys.exit(1)
         self.operations()
 
+    def connect_sorts_fun(self):
+        try:
+            self.sortslib
+            self.sortslib = Sorts()
+            self.Sorts_method_list = [method for method in dir(Sorts) if method.startswith('__') is False]
+            print('There are:', len(self.Sorts_method_list), 'included methods')
+            for i in tqdm(self.Sorts_method_list):
+                time.sleep(1)
+            print('Connection completed')
+        except:
+            print('Connection failed:')
+            print('An error occurred while trying to load the sorts from .../sorts_base.py')
+            print('Check it out in your folder.')
+            sys.exit(1)
+        self.operations()
     def operations(self):
         try:
             self.t_clear()

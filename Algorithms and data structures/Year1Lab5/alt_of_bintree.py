@@ -4,7 +4,6 @@ import sys
 sys.setrecursionlimit(10**9)
 ans = []
 
-def
 
 def length(potok, k):
     if potok[1] == 0 and potok[2] == 0:
