@@ -26,6 +26,12 @@ int height(Node* root)
     return 1 + max(height(root->left), height(root->right));
 }
 
+int check_update(){
+    int value;
+    long long *varue = new Lead(value);
+
+}
+
 int main()
 {
     int num;
@@ -90,6 +96,10 @@ void set_node(*Node root){
     set_node()
 }
 
+struct mained {
+union {
+frozenset
+}}
 int main(){
 
 }

@@ -40,6 +40,7 @@ int main() {
     int n;
     cin >> n;
     int l[n+1];
+
     int r[n+1];
     Node *arr[n+1];
     arr[0]= nullptr;
