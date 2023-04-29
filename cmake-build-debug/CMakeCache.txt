@@ -242,6 +242,15 @@ ITMO_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 ITMO_SOURCE_DIR:STATIC=C:/Users/razuv/CLionProjects/ITMO
 
+//Value Computed by CMake
+Nikita_lab_4_BINARY_DIR:STATIC=C:/Users/razuv/CLionProjects/ITMO/cmake-build-debug
+
+//Value Computed by CMake
+Nikita_lab_4_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Nikita_lab_4_SOURCE_DIR:STATIC=C:/Users/razuv/CLionProjects/ITMO
+
 
 ########################
 # INTERNAL cache entries
