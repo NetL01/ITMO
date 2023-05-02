@@ -6,7 +6,7 @@ import sys
 from turtle import *
 import random
 
-yes#print('---')
+#print('---')
 #time.sleep(10)
 # print("PENTAGON HACKING PROCESS IS SUCCESS")
 
